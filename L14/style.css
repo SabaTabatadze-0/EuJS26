@@ -1,0 +1,23 @@
+.description{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px auto;
+    width: 40%;
+    background-color: antiquewhite;
+}
+
+#field{
+    border: 2px solid black;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.ball{
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
