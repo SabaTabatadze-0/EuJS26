@@ -1,0 +1,26 @@
+.ctrls{
+    border: solid 2px green;
+    width: 40%;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: yellowgreen;
+}
+.container{
+    border: solid 2px green;
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: rgb(216, 241, 167);
+    min-height: 400px;
+    .test{
+        width: 400px;
+        height: 200px;
+        background-color: red;
+    }
+}
+.new{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    margin: 10px;
+}
