@@ -12,13 +12,26 @@ var text = ctrls.children[2]
 
 btn1.addEventListener("click", function(){
     var par = document.getElementsByClassName("par")[0]
+    
     var new_p = document.createElement("p")
     new_p.classList.add("new")
     new_p.textContent = text.value
+
+    var btn3 = document.createElement("button")
+    btn3.textContent = "X"
+    btn3.classList.add("delete")
+    
+
+    btn3.addEventListener("click", function(){
+        new_p.remove()
+    })
+    
+    new_p.appendChild(btn3)
     par.after(new_p)
 })
 
 btn2.addEventListener("click", function(){
-    var par = document.getElementsByClassName("par")[0]
-    par.nextSibling.remove()
+    document.querySelectorAll(".new").forEach(function (p){
+        p.remove()
+    })
 })
